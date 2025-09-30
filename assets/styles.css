@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px; /* Corrected font size */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-title{
+    font-size: 35px;
+    font-weight: 700;
+    /* margin-bottom: 20px; */
+    color:#00b795;
+    text-align: center;
+}
+section{
+    margin-bottom: 20px;
+
+}
+/* Header section */
+header {
+    background-image: url('img/intro_bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 305px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Main navigation links */
+.navbar>ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar>ul>li {
+    cursor: pointer;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative; /* Needed for the pseudo-element positioning */
+    padding-bottom: 5px; /* Add some space for the underline */
+}
+
+/* Animated underline for nav links */
+.navbar>ul>li>a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00b795;
+    transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #00b795;
+}
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Specific styling for the main navigation menu */
+.nav-menu {
+    gap: 45px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Action buttons */
+.nav-btn {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.navbar .nav-btn a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400; /* Set font weight for all nav buttons */
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Specific button styles */
+.navbar .btn-track {
+    color: #00b795;
+}
+
+.navbar .btn-track:hover {
+    color: black;
+}
+
+.navbar .btn-login {
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #00b795;
+}
+
+.navbar .btn-login:hover {
+    background-color: #00b795;
+    color: white;
+}
+
+.navbar .btn-signup {
+    background-color: #00b795;
+    color: white;
+    border: 1px solid #00b795;
+}
+
+.navbar .btn-signup:hover {
+    color: #00b795;
+    background-color: #008f7500;
+}
+
+.navbar .btn-en {
+    font-weight: bold;
+    color: #008f75;
+    border: #008f75 1px solid;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.navbar .btn-en:hover {
+    background-color: #e0e0e0;
+
+}
+
+/* Hide hamburger by default on desktop */
+.hamburger-menu {
+    display: none;
+}
+
+/* Hero section */
+.hero-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.banner-text {
+    width: 50%;
+}
+
+
+.banner-text h1 {
+    font-size: 45px;
+    color: #212529;
+    /* margin: 0 0 20px 0; */
+    font-weight: 700;
+}
+
+.banner-text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.merchant-btn {
+    background-color: #00b795;
+    color: white;
+    border: 1px solid #00b795;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.merchant-btn:hover {
+    color: #00b795;
+    background-color: #008f7500;
+}
+
+.banner-image {
+    flex: 1;
+    text-align: right;
+    /* Align image to the right */
+}
+
+.rider {
+    max-height: 450px;
+    height: auto;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: fit-content; /* Ensure it doesn't stretch vertically */
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.stat-icon {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border: 2px solid #00b795;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-item h2 {
+    color: #00b795;
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+.stat-item p {
+    margin: 0;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px; /* Adjusted for consistency */
+}
+
+
+/* main section */
+
+main {
+    padding: 0px 305px;
+    box-sizing: border-box;
+}
+/* Partner Section */
+.partner-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.partner-logos {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.partner-logos img {
+    height: 60px; /* Set a fixed height for all logos */
+    width: auto; /* Allow width to adjust to maintain aspect ratio */
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* service section */
+
+.service {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Adds space if the items wrap */
+    margin-top: 50px;
+}
+
+.service-card {
+    padding: 30px;
+    transition: all 0.3s ease;
+    flex-basis: 22%; 
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us Section */
+.choose {
+    padding: 60px 0;
+    text-align: center;
+    /* background-color: #f9f9f9;  */
+}
+
+.choose-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.choose-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    flex-basis: 30%; /* Distributes space among 3 cards */
+    text-align: left;
+}
+
+.choose-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.choose-icon {
+    height: 100px;
+    /* margin-bottom: 5px; */
+}
+
+.choose-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.choose-card p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.7;
+}
+
+/* FAQ Section */
+.question {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.faq {
+    max-width: 70%;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: transparent; /* Remove background */
+    border-bottom: 1px solid #e0e0e0; /* Use bottom border for separation */
+    overflow: visible; /* Allow content to flow */
+}
+
+.faq-question {
+    /* Reset button styles */
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; /* Adjust padding for borderless look */
+    cursor: pointer;
+}
+
+.faq-item.active .faq-question {
+    color: #00b795; /* Change text color on active */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px; /* Remove vertical padding when collapsed */
+    color: #555;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-icon {
+    font-size: 24px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 100px; /* Adjust if your answers are longer */
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+/* Grow Section */
+
+.grow {
+    background-color:#00b795;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.grow-title {
+    font-size: 35px; /* Matching .section-title */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.grow-text {
+    font-size: 18px; /* Matching body font-size */
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.merchant-btn2 {
+    background-color: white;
+    color: #00b795;
+    border: 1px solid white;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block; /* Ensures margin-top is applied correctly */
+}
+.merchant-btn2:hover {
+    color: white;
+    background-color: #008f7500;
+}
+
+/* Licensing Section */
+.licensing {
+    display: flex;
+    justify-content: space-evenly; /* Center the items */
+    align-items: center;
+    gap: 50px; /* Use gap for spacing */
+    padding: 40px 0;
+    align-items: flex-start;
+}
+
+.license-item {
+    width: 400px; /* Give items a consistent width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    gap: 15px;
+    padding: 0 50px; /* Adjust padding */
+}
+
+.license-item:last-child {
+    border-left: 1px solid #e0e0e0; /* Use border-left on the second item */
+}
+
+.license-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    color:#00b795;
+}
+
+.license-item p {
+    margin: 0;
+    color: #777;
+}
+
+.membership-logos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f9f9f9;
+    padding: 60px 305px; /* Added horizontal padding to match main content */
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px; /* Adds space between columns */
+    margin-bottom: 40px;
+}
+
+.footer-item {
+    flex: 1; /* Allows columns to grow and shrink */
+}
+
+.footer-item:first-child {
+    flex-basis: 30%; /* Give the first item more space */
+}
+
+.footer-item img {
+    margin-bottom: 20px;
+}
+
+.footer-item p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.footer-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item ul li a {
+    line-height: 2.2;
+    transition: color 0.3s ease;
+}
+
+.footer-item ul li a:hover {
+    color: #00b795;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
