@@ -7,7 +7,8 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
-    font-size: 18px; /* Corrected font size */
+    font-size: 18px;
+    /* Corrected font size */
 }
 
 a {
@@ -15,27 +16,27 @@ a {
     color: inherit;
 }
 
-.section-title{
+.section-title {
     font-size: 35px;
     font-weight: 700;
     /* margin-bottom: 20px; */
-    color:#00b795;
+    color: #00b795;
     text-align: center;
 }
-section{
-    margin-bottom: 20px;
 
-}
+
 
 .container {
     width: 100%;
-    max-width: 1320px; /* Standard max-width for large desktops */
+    max-width: 1320px;
+    /* Standard max-width for large desktops */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
 }
+
 /* Header section */
 header {
     background-image: url('../img/intro_bg.png');
@@ -53,15 +54,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0; /* Restore vertical padding for the navbar */
-    position: relative; /* For mobile nav positioning */
+    padding: 15px 0;
+    /* Restore vertical padding for the navbar */
+    position: relative;
+    /* For mobile nav positioning */
 }
 
 .nav-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-grow: 1; /* Allow nav-wrapper to take available space */
+    flex-grow: 1;
+    /* Allow nav-wrapper to take available space */
 }
 
 /* Main navigation links */
@@ -78,8 +82,10 @@ header {
     font-weight: 400;
     font-size: 16px;
     transition: color 0.3s ease;
-    position: relative; /* Needed for the pseudo-element positioning */
-    padding-bottom: 5px; /* Add some space for the underline */
+    position: relative;
+    /* Needed for the pseudo-element positioning */
+    padding-bottom: 5px;
+    /* Add some space for the underline */
 }
 
 /* Animated underline for nav links */
@@ -97,6 +103,7 @@ header {
 .nav-menu li a:hover {
     color: #00b795;
 }
+
 .nav-menu li a:hover::after {
     width: 100%;
 }
@@ -113,7 +120,8 @@ header {
     justify-content: space-between;
     gap: 20px;
     align-items: center;
-    flex-shrink: 0; /* Prevent buttons from shrinking */
+    flex-shrink: 0;
+    /* Prevent buttons from shrinking */
     border-radius: 4px;
 }
 
@@ -124,7 +132,8 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-weight: 400; /* Set font weight for all nav buttons */
+    font-weight: 400;
+    /* Set font weight for all nav buttons */
     transition: all 0.3s ease;
 }
 
@@ -175,7 +184,8 @@ header {
 
 /* Hide hamburger by default on desktop */
 .hamburger-menu {
-    display: none; /* Hidden on desktop */
+    display: none;
+    /* Hidden on desktop */
     cursor: pointer;
     flex-direction: column;
     gap: 4px;
@@ -247,8 +257,10 @@ header {
 .rider {
     max-height: 450px;
     height: auto;
-    max-width: 100%; /* Ensures the image is responsive and doesn't overflow */
-    display: block; /* Removes extra space below the image */
+    max-width: 100%;
+    /* Ensures the image is responsive and doesn't overflow */
+    display: block;
+    /* Removes extra space below the image */
 }
 
 .stats-container {
@@ -262,7 +274,8 @@ header {
     width: 25%;
     box-sizing: border-box;
     /* background-color: #fff; */
-    height: fit-content; /* Ensure it doesn't stretch vertically */
+    height: fit-content;
+    /* Ensure it doesn't stretch vertically */
 }
 
 .stat-item {
@@ -296,7 +309,8 @@ header {
     margin: 0;
     color: #555;
     font-weight: 500;
-    font-size: 14px; /* Adjusted for consistency */
+    font-size: 14px;
+    /* Adjusted for consistency */
 }
 
 
@@ -306,14 +320,16 @@ main {
     /* padding: 0px 305px; */
     box-sizing: border-box;
 }
+
 /* Partner Section */
 .partner-section {
-    padding: 60px 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
 .partner-logos {
-    padding: 50px 0;
+    /* padding: 50px 0; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -322,8 +338,10 @@ main {
 }
 
 .partner-logos img {
-    height: 60px; /* Set a fixed height for all logos */
-    width: auto; /* Allow width to adjust to maintain aspect ratio */
+    height: 60px;
+    /* Set a fixed height for all logos */
+    width: auto;
+    /* Allow width to adjust to maintain aspect ratio */
     object-fit: contain;
     transition: all 0.3s ease;
 }
@@ -337,30 +355,36 @@ main {
 /* service section */
 
 .service {
-    padding: 60px 0;
-    text-align: center;
+padding-bottom: 30px;    text-align: center;
 }
 
 .service-cards {
     display: flex;
-    justify-content: center; /* Center cards if they wrap to a new line */
-    align-items: stretch; /* Align items to have same height */
-    gap: 20px; 
+    justify-content: center;
+    /* Center cards if they wrap to a new line */
+    align-items: stretch;
+    /* Align items to have same height */
+    gap: 20px;
     margin-top: 50px;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    flex-wrap: wrap;
+    /* Allow cards to wrap on smaller screens */
 }
 
 .service-card {
     padding: 30px;
     transition: all 0.3s ease;
-    flex-basis: calc(25% - 20px); /* Precise width for 4 cards with gap */
+    flex-basis: calc(25% -20px);
+    /* Precise width for 4 cards with gap */
     text-align: center;
-    min-width: 250px; /* Prevent cards from getting too narrow before wrapping */
+    min-width: 250px;
+    /* Prevent cards from getting too narrow before wrapping */
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     background-color: #ffefdf;
-    display: flex; /* Use flexbox for internal alignment */
-    flex-direction: column; /* Stack content vertically */
+    display: flex;
+    /* Use flexbox for internal alignment */
+    flex-direction: column;
+    /* Stack content vertically */
 }
 
 .service-card:hover {
@@ -371,21 +395,24 @@ main {
 .service-icon {
     height: 200px;
     margin-bottom: 20px;
-    object-fit: contain; /* Ensure icon scales properly */
-    flex-grow: 1; /* Allow icon container to grow */
+    object-fit: contain;
+    /* Ensure icon scales properly */
+    flex-grow: 1;
+    /* Allow icon container to grow */
     width: 100%;
 }
 
 /* Why Choose Us Section */
 .choose {
-    padding: 60px 0;
+    padding-bottom: 30px;
     text-align: center;
     /* background-color: #f9f9f9;  */
 }
 
 .choose-cards {
     display: flex;
-    justify-content: center; /* Center cards for better alignment on wrap */
+    justify-content: center;
+    /* Center cards for better alignment on wrap */
     gap: 20px;
     margin-top: 50px;
     flex-wrap: wrap;
@@ -397,7 +424,8 @@ main {
     padding: 20px 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    flex-basis: calc(33.333% - 20px); /* Precise width for 3 cards with gap */
+    flex-basis: calc(33.333% - 20px);
+    /* Precise width for 3 cards with gap */
     text-align: left;
 }
 
@@ -426,7 +454,7 @@ main {
 
 /* FAQ Section */
 .question {
-    padding: 60px 0;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -440,9 +468,12 @@ main {
 }
 
 .faq-item {
-    background-color: transparent; /* Remove background */
-    border-bottom: 1px solid #e0e0e0; /* Use bottom border for separation */
-    overflow: visible; /* Allow content to flow */
+    background-color: transparent;
+    /* Remove background */
+    border-bottom: 1px solid #e0e0e0;
+    /* Use bottom border for separation */
+    overflow: visible;
+    /* Allow content to flow */
 }
 
 .faq-question {
@@ -451,19 +482,23 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0; /* Adjust padding for borderless look */
+    padding: 20px 0;
+    /* Adjust padding for borderless look */
     cursor: pointer;
-    list-style: none; /* Hide the default marker */
+    list-style: none;
+    /* Hide the default marker */
 }
 
-.faq-item[open] > .faq-question {
-    color: #00b795; /* Change text color on active */
+.faq-item[open]>.faq-question {
+    color: #00b795;
+    /* Change text color on active */
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    padding: 0 10px; /* Remove vertical padding when collapsed */
+    padding: 0 10px;
+    /* Remove vertical padding when collapsed */
     color: #555;
     transition: max-height 0.3s ease-out;
 }
@@ -477,7 +512,8 @@ main {
     font-size: 24px;
     font-weight: 300;
     transition: transform 0.3s ease;
-    margin-left: auto; /* Push icon to the right */
+    margin-left: auto;
+    /* Push icon to the right */
 }
 
 .faq-item[open] .faq-icon {
@@ -485,7 +521,8 @@ main {
 }
 
 .faq-item[open] .faq-answer {
-    max-height: 100px; /* Adjust if your answers are longer */
+    max-height: 100px;
+    /* Adjust if your answers are longer */
 }
 
 
@@ -493,25 +530,30 @@ main {
 /* Grow Section */
 
 .grow {
-    background-color:#00b795;
+    background-color: #00b795;
     text-align: center;
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 10px;
     color: white;
+    margin: 30px 0;
 }
 
 .grow-title {
-    font-size: 35px; /* Matching .section-title */
+    font-size: 35px;
+    /* Matching .section-title */
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .grow-text {
-    font-size: 18px; /* Matching body font-size */
+    font-size: 18px;
+    /* Matching body font-size */
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 30px;
 }
+
 .merchant-btn2 {
     background-color: white;
     color: #00b795;
@@ -520,8 +562,10 @@ main {
     padding: 10px 20px;
     border-radius: 4px;
     font-weight: 500;
-    display: inline-block; /* Ensures margin-top is applied correctly */
+    display: inline-block;
+    /* Ensures margin-top is applied correctly */
 }
+
 .merchant-btn2:hover {
     color: white;
     background-color: #008f7500;
@@ -530,24 +574,30 @@ main {
 /* Licensing Section */
 .licensing {
     display: flex;
-    justify-content: space-evenly; /* Center the items */
+    justify-content: space-evenly;
+    /* Center the items */
     align-items: center;
-    gap: 50px; /* Use gap for spacing */
-    padding: 40px 0;
+    gap: 50px;
+    /* Use gap for spacing */
+    padding-bottom: 30px;
     align-items: flex-start;
 }
 
 .license-item {
-    width: 400px; /* Give items a consistent width */
+    width: 400px;
+    /* Give items a consistent width */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start;
+    /* Align items to the left */
     gap: 15px;
-    padding: 0 50px; /* Adjust padding */
+    padding: 0 50px;
+    /* Adjust padding */
 }
 
 .license-item:last-child {
-    border-left: 1px solid #e0e0e0; /* Use border-left on the second item */
+    border-left: 1px solid #e0e0e0;
+    /* Use border-left on the second item */
 }
 
 .license-item h3 {
@@ -557,7 +607,7 @@ main {
     font-size: 15px;
     font-weight: 600;
     margin: 0;
-    color:#00b795;
+    color: #00b795;
 }
 
 .license-item p {
@@ -585,16 +635,19 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    gap: 40px; /* Adds space between columns */
+    gap: 40px;
+    /* Adds space between columns */
     margin-bottom: 40px;
 }
 
 .footer-item {
-    flex: 1; /* Allows columns to grow and shrink */
+    flex: 1;
+    /* Allows columns to grow and shrink */
 }
 
 .footer-item:first-child {
-    flex-basis: 30%; /* Give the first item more space */
+    flex-basis: 30%;
+    /* Give the first item more space */
 }
 
 .footer-item img {
@@ -637,8 +690,67 @@ footer {
 
 /* --- Responsive Styles --- */
 
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1380px;
+        /* Slightly wider container for large screens */
+    }
+}
+
+/* --- Responsive Styles --- */
+
 /* Tablet Styles (e.g., iPads) */
 @media (max-width: 1024px) {
+
+    /* --- Hamburger Menu and Navigation for Tablets & Mobile --- */
+    .navbar .nav-wrapper {
+        display: none;
+        /* Hide desktop nav */
+        position: absolute;
+        top: 70px;
+        /* Position below navbar */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: flex-start;
+        gap: 0;
+        z-index: 1000;
+        /* Ensure nav is on top of other content */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        /* Show hamburger */
+        order: 1;
+        /* Move hamburger to the right */
+    }
+
+    .navbar-logo {
+        order: 0;
+    }
+
+    .nav-wrapper.active {
+        display: flex;
+        /* Show when active */
+    }
+
+    .nav-wrapper .nav-menu,
+    .nav-wrapper .nav-btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .nav-wrapper .nav-btn {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #e0e0e0;
+    }
 
     .hero-content-wrapper {
         flex-direction: column;
@@ -666,7 +778,14 @@ footer {
     }
 
     .choose-card {
-        flex-basis: calc(50% - 20px); /* 2 cards per row */
+        flex-basis: calc(50% - 20px);
+        /* 2 cards per row */
+        box-sizing: border-box;
+    }
+
+    .service-card {
+        flex-basis: calc(50% - 10px);
+        /* Corrected calculation for 2 cards with 20px gap */
         box-sizing: border-box;
     }
 
@@ -700,47 +819,6 @@ footer {
         font-size: 16px;
     }
 
-    /* --- Hamburger Menu and Navigation --- */
-    .navbar .nav-wrapper {
-        display: none; /* Hide desktop nav */
-        position: absolute;
-        top: 70px; /* Position below navbar */
-        left: 0;
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        flex-direction: column;
-        padding: 20px;
-        box-sizing: border-box;
-        align-items: flex-start;
-        gap: 0;
-    }
-
-    .hamburger-menu {
-        display: flex; /* Show hamburger */
-        order: 1; /* Move hamburger to the right */
-    }
-    .navbar-logo {
-        order: 0;
-    }
-
-    .nav-wrapper.active {
-        display: flex; /* Show when active */
-    }
-
-    .nav-wrapper .nav-menu,
-    .nav-wrapper .nav-btn {
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-    }
-
-    .nav-wrapper .nav-btn {
-        margin-top: 15px;
-        padding-top: 15px;
-        border-top: 1px solid #e0e0e0;
-    }
-
     .nav-wrapper .nav-btn li,
     .nav-wrapper .nav-btn a {
         width: 100%;
@@ -763,12 +841,14 @@ footer {
     }
 
     .service-card {
-        flex-basis: calc(50% - 10px); /* Corrected calculation for 2 cards with 20px gap */
+        flex-basis: calc(50% - 10px);
+        /* Corrected calculation for 2 cards with 20px gap */
         box-sizing: border-box;
     }
 
     .service-icon {
-        height: 150px; /* Reduce icon size on mobile */
+        height: 150px;
+        /* Reduce icon size on mobile */
     }
 
     .choose-cards {
