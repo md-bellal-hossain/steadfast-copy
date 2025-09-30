@@ -261,7 +261,7 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 25%;
     box-sizing: border-box;
-    background-color: #fff;
+    /* background-color: #fff; */
     height: fit-content; /* Ensure it doesn't stretch vertically */
 }
 
